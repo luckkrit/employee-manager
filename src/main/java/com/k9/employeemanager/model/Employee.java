@@ -6,7 +6,7 @@ import java.io.Serializable;
 @Entity
 public class Employee implements Serializable {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false, updatable = false)
     private Long id;
 
@@ -14,6 +14,7 @@ public class Employee implements Serializable {
     private String email;
     private String jobTitle;
     private String phone;
+    private String imageUrl;
     @Column(nullable = false, updatable = false)
     private String employeeCode;
 
@@ -87,5 +88,16 @@ public class Employee implements Serializable {
         this.imageUrl = imageUrl;
     }
 
-    private String imageUrl;
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", phone='" + phone + '\'' +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", employeeCode='" + employeeCode + '\'' +
+                '}';
+    }
 }
