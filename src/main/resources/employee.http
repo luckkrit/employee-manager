@@ -1,0 +1,75 @@
+POST http://localhost:8080/employee/add
+Content-Type: application/json
+
+{
+  "name": "Emma A. Main",
+  "email": "PaulGoyette@gmail.com",
+  "phone": "000 123-456",
+  "jobTitle": "Graphics Designer",
+  "imageUrl": "https://bootdey.com/img/Content/avatar/avatar7.png"
+}
+
+###
+
+POST http://localhost:8080/employee/add
+Content-Type: application/json
+
+{
+  "name": "Paul L. Goyette",
+  "email": "PaulGoyette@gmail.com",
+  "phone": "000 123-456",
+  "jobTitle": "Graphics Designer",
+  "imageUrl": "https://bootdey.com/img/Content/avatar/avatar6.png"
+}
+
+###
+
+POST http://localhost:8080/employee/add
+Content-Type: application/json
+
+{
+  "name": "Jonathan Smith",
+  "email": "PaulGoyette@gmail.com",
+  "phone": "000 123-456",
+  "jobTitle": "Graphics Designer",
+  "imageUrl": "https://bootdey.com/img/Content/avatar/avatar5.png"
+}
+
+###
+
+POST http://localhost:8080/employee/add
+Content-Type: application/json
+
+{
+  "name": "Lily J. Ford",
+  "email": "PaulGoyette@gmail.com",
+  "phone": "000 123-456",
+  "jobTitle": "Graphics Designer",
+  "imageUrl": "000 123-456"
+}
+
+###
+GET http://localhost:8080/employee/all
+Accept: application/json
+
+###
+PUT http://localhost:8080/employee/update
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Krit Chomaitong",
+  "email": "luckkrit@hotmail.com",
+  "phone": "0891671761",
+  "jobTitle": "freelance",
+  "imageUrl": "tset2",
+  "employeeCode": "a43bb2b3-7b5c-407c-9180-f6aef506de0d"
+}
+
+###
+DELETE http://localhost:8080/employee/delete/1
+Content-Type: application/json
+
+###
+GET http://localhost:8080/employee/find/1
+Content-Type: application/json
